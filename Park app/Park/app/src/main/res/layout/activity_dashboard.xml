@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="SuccessFully Logged In, Your Email =  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EmailShow"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/EmailShow"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Logout"/>
+
+    <LinearLayout
+        android:layout_below="@id/button"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailShow"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="Get Password" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/passwordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <Button
+            android:id="@+id/setpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailShow"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Open" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/searchSlots"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_slots"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/searchSlots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</RelativeLayout>
